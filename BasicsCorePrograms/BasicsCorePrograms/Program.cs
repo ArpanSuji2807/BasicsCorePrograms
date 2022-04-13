@@ -1,7 +1,7 @@
 ﻿using BasicsCorePrograms;
 Console.WriteLine("Welcome to Basic Programs");
 bool end = true;
-Console.WriteLine("1.Flip Coin\n2.Leap Year\n3.Power Of two\n4.Harmonic number\n5.Prime Factors");
+Console.WriteLine("1.Flip Coin\n2.Leap Year\n3.Power Of two\n4.Harmonic number\n5.Prime Factors\n6.Quotient and reminder");
 while (end)
 {
     Console.WriteLine("Take an Option to execute");
@@ -29,6 +29,10 @@ while (end)
             n.PrimeFactor();
             break;
         case 6:
+            QuotientAndReminder num1 = new QuotientAndReminder();
+            num1.QuoAndRem();
+            break;
+        case 7:
             end = false;
             break;
         default: break;
