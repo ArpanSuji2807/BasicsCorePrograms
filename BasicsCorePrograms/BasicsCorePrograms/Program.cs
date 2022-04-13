@@ -1,7 +1,7 @@
 ﻿using BasicsCorePrograms;
 Console.WriteLine("Welcome to Basic Programs");
 bool end = true;
-Console.WriteLine("1.Flip Coin\n2.Leap Year\n3.Power Of two\n4.Harmonic number\n5.Prime Factors\n6.Quotient and reminder\n7.Swap Two numbers");
+Console.WriteLine("1.Flip Coin\n2.Leap Year\n3.Power Of two\n4.Harmonic number\n5.Prime Factors\n6.Quotient and reminder\n7.Swap Two numbers\n8.Even or Odd");
 while (end)
 {
     Console.WriteLine("Take an Option to execute");
@@ -37,6 +37,10 @@ while (end)
             num2.Swap();
             break;
         case 8:
+            EvenOrOdd num3 = new EvenOrOdd();
+            num3.Number();
+            break;
+        case 9:
             end = false;
             break;
         default: break;
