@@ -1,7 +1,7 @@
 ﻿using BasicsCorePrograms;
 Console.WriteLine("Welcome to Basic Programs");
 bool end = true;
-Console.WriteLine("1.Flip Coin\n2.Leap Year\n3.Power Of two\n4.Harmonic number");
+Console.WriteLine("1.Flip Coin\n2.Leap Year\n3.Power Of two\n4.Harmonic number\n5.Prime Factors");
 while (end)
 {
     Console.WriteLine("Take an Option to execute");
@@ -25,6 +25,10 @@ while (end)
             number.Harmonic();
             break;
         case 5:
+            Factors n = new Factors();
+            n.PrimeFactor();
+            break;
+        case 6:
             end = false;
             break;
         default: break;
