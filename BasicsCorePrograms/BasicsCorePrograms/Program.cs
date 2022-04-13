@@ -1,7 +1,7 @@
 ﻿using BasicsCorePrograms;
 Console.WriteLine("Welcome to Basic Programs");
 bool end = true;
-Console.WriteLine("1.Flip Coin");
+Console.WriteLine("1.Flip Coin\n2.Leap Year");
 while (end)
 {
     Console.WriteLine("Take an Option to execute");
@@ -13,6 +13,10 @@ while (end)
             flipCoin.Flip();
             break;
         case 2:
+            LeapYear year = new LeapYear();
+            year.Year();
+            break;
+        case 3:
             end = false;
             break;
         default: break;
