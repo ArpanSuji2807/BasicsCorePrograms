@@ -13,6 +13,7 @@ namespace BasicsCorePrograms
             char vowel;
             Console.WriteLine("Enter an alphabet : ");
             vowel = Console.ReadKey().KeyChar;
+            vowel=char.ToLower(vowel);
             if (vowel == 'a' || vowel == 'e' || vowel == 'i' || vowel == 'o' || vowel == 'u')
             {
                 Console.WriteLine(" :- It is a vowel");
