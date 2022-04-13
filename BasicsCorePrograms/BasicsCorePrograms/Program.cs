@@ -1,7 +1,7 @@
 ﻿using BasicsCorePrograms;
 Console.WriteLine("Welcome to Basic Programs");
 bool end = true;
-Console.WriteLine("1.Flip Coin\n2.Leap Year\n3.Power Of two");
+Console.WriteLine("1.Flip Coin\n2.Leap Year\n3.Power Of two\n4.Harmonic number");
 while (end)
 {
     Console.WriteLine("Take an Option to execute");
@@ -21,6 +21,10 @@ while (end)
             power.Power();
             break;
         case 4:
+            HarmonicNumber number = new HarmonicNumber();
+            number.Harmonic();
+            break;
+        case 5:
             end = false;
             break;
         default: break;
